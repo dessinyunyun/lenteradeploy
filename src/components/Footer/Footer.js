@@ -11,7 +11,7 @@ export default function Footer() {
           <h5 className="font-semibold text-sm sm:text-center text-center w-full sm:mb-1">Partner of:</h5>
           <img src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ekatalog1-removebg-preview.png" alt="logo ekatalog" width={150} />
         </div>
-        <div class="Contact-us sm:text-center text-center sm:w-1/3 text-slate-300">
+        <div className="Contact-us sm:text-center text-center sm:w-1/3 text-slate-300">
           <h5 className="font-semibold text-sm md:mt-0 mt-3">Contact Info:</h5>
           <div className="contact  md:mt-3  text-sm">
             <p className="m-0">support@lenterainovasi.co.id</p>
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="copy-right w-full flex justify-center">
+      <div className="copy-right w-full flex justify-center">
         <p className="text-slate-400 m-0 mt-3 ">&copy; {new Date().getFullYear()} Lentera Inovasi</p>
       </div>
     </footer>

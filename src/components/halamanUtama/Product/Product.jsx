@@ -47,7 +47,17 @@ export default function Product(props) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    if ((props.sizeScreen, length > 0)) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [props]);
   console.log(props);
+
   return (
     <div className="product-contain mt-14 flex flex-col  m-auto w-4/5" style={{ rowGap: `${5.5}px` }} id="product">
       <div className="grid md:grid-cols-3 sm:gap-x-1.5 gap-y-1.5 h-1/2 w-full" style={{ paddingRight: `${2.5}px`, paddingLeft: `${3}px` }}>
@@ -55,7 +65,7 @@ export default function Product(props) {
           className="Audio Visual sm:col-span-2 bg-slate-400  box-border relative "
           ref={audioVisual}
           style={{
-            height: props.sizeScreen === "hp" ? `${networkingAndComputerHeightMobile}px` : `${audioVisualHeight + 1}px`,
+            height: props.sizeScreen == "hp" ? `${networkingAndComputerHeight}px` : `${audioVisualHeight + 1}px`,
           }}
         >
           <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683959734516.jpeg?size=Original" className="w-full h-full object-cover" alt="audio visual" layout="fill" />

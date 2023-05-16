@@ -208,7 +208,6 @@ img {
   -webkit-animation: gradientAnimation 2s ease forwards;
   animation: gradientAnimation 2s ease forwards;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .gradient-overlay h2 {
   margin: 0;

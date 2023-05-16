@@ -8,7 +8,8 @@ const LazyWhyChooseUs = lazy(() => import("../components/halamanUtama/whychoseus
 const LazyBrandPartner = lazy(() => import("../components/halamanUtama/brandPartner"));
 
 export default function Home() {
-  const [sizeScreen, setSizeScreen] = useState("");
+  const [sizeScreen, setSizeScreen] = useState("hp");
+
   const handleResize = useCallback(() => {
     const screenWidth = window.innerWidth;
     if (screenWidth > 1023) {
@@ -27,6 +28,18 @@ export default function Home() {
       window.removeEventListener("resize", handleResize);
     };
   }, [handleResize]);
+
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+    console.log(screenWidth);
+    if (screenWidth > 1023) {
+      setSizeScreen("laptop");
+    } else if (screenWidth > 639) {
+      setSizeScreen("tablet");
+    } else {
+      setSizeScreen("hp");
+    }
+  }, []);
 
   console.log(sizeScreen);
 
@@ -52,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Product sizeScreen={sizeScreen} />
+      {sizeScreen.length > 0 && <Product sizeScreen={sizeScreen} />}
       <Suspense fallback={<div>Loading...</div>}>
         <LazyWhyChooseUs sizeScreen={sizeScreen} />
       </Suspense>

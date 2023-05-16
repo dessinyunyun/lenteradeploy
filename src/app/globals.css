@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff !important;
-  font-family: "Raleway", Raleway !important;
+  font-family: system-ui, -apple-system, "Raleway", Raleway, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
   scroll-behavior: smooth !important;
 }
 .nav {
@@ -123,14 +123,7 @@ body {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #fff !important;
-  font-family: Raleway, Raleway !important;
-  scroll-behavior: smooth !important;
-}
+
 p {
   line-height: 1.6;
   margin: 1.2em 0;

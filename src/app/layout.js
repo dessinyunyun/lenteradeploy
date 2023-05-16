@@ -4,7 +4,7 @@ import { Raleway } from "next/font/google";
 import Footer from "@/components/Footer/";
 import Main from "@/components/Main/Main";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"], variable: "--font-sofia" });
 
 export const metadata = {
   title: "Lentera Inovasi",
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head></head>
-      <body className={raleway.className}>
+      <body className={raleway.variable}>
         <Nav />
         <Main>{children}</Main>
         <Footer />

@@ -168,6 +168,12 @@ img {
   box-sizing: border-box !important;
   gap: 10px;
 }
+
+@media screen and (max-width: 639px) {
+  .product-list .slick-slider .slick-track {
+    gap: 0px;
+  }
+}
 .about-us-contain {
   position: relative;
   background-image: url(https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/command-control-center-ultimate-guide-1-e1683959901478.png?size=Thumbnail);

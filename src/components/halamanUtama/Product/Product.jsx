@@ -65,7 +65,7 @@ export default function Product(props) {
           className="Audio Visual sm:col-span-2 bg-slate-400  box-border relative "
           ref={audioVisual}
           style={{
-            height: props.sizeScreen == "hp" ? `${networkingAndComputerHeight}px` : `${audioVisualHeight + 1}px`,
+            height: props.sizeScreen === "hp" ? `208px` : `${audioVisualHeight + 1}px`,
           }}
         >
           <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683959734516.jpeg?size=Original" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
@@ -81,7 +81,7 @@ export default function Product(props) {
             className="networking w-full h-full relative "
             ref={networkingAndComputer}
             style={{
-              height: props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? `${networkingAndComputerHeight}px` : "",
+              height: props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? `${networkingAndComputerHeight}px` : `208px`,
             }}
           >
             <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/6372f7e07746ccd481b5082d_nasa-min-e1683959705302.jpg?size=Original" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
@@ -92,7 +92,13 @@ export default function Product(props) {
               </div>
             </div>
           </div>
-          <div className="computer-printer w-full h-full  relative" ref={networkingAndComputer} style={{ height: `${networkingAndComputerHeight}px` }}>
+          <div
+            className="computer-printer w-full h-full  relative"
+            ref={networkingAndComputer}
+            style={{
+              height: props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? `${networkingAndComputerHeight}px` : `208px`,
+            }}
+          >
             <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/printer-computer-office-table_93675-3798-e1683959717790.jpg?size=Original" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
             <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`}>
               <div className="text text-white absolute bottom-3 left-3 text-start text-base sm:text-xs lg:text-base">

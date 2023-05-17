@@ -74,7 +74,7 @@ const Nav = () => {
   }, [menuOpen]);
 
   return (
-    <nav className={`lg:px-32 sm:px-10 px-5 py-2 fixed top-0 navbar z-20 font-regular w-full ${scrolled && "scrolled"} ${!isScrolling && scrolled && !menuOpen && "opacity-0"} ${menuOpen ? "bg-white" : ""}`}>
+    <nav className={`lg:px-32 sm:px-10 px-5 py-3 fixed top-0 navbar z-20 font-regular w-full ${scrolled && "scrolled"} ${!isScrolling && scrolled && !menuOpen && "opacity-0"} ${menuOpen ? "bg-white" : ""}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
@@ -104,7 +104,7 @@ const Nav = () => {
               </ul>
             </div>
           )}
-          <button className="lg:hidden absolute top-0 right-3 focus:outline-none text-white text-md font-medium " onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
+          <button className="lg:hidden absolute -top-1 right-3 focus:outline-none text-white text-md font-medium " onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>

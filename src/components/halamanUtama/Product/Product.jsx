@@ -35,7 +35,7 @@ export default function Product(props) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const divElement = document.getElementById("audio-visual");
+      const divElement = document.getElementById("networking");
       const rect = divElement.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
@@ -69,7 +69,7 @@ export default function Product(props) {
           }}
         >
           <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683625549145.jpeg?size=Thumbnail" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
-          <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`} id="audio-visual">
+          <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`}>
             <div className="text text-white absolute bottom-3 left-3 text-start text-base lg:text-xl">
               <h4>Audio Visual</h4>
               <p className="font-semibold m-0">Bring your ideas to life with our audio visual services that combine creativity and technology.</p>
@@ -78,6 +78,7 @@ export default function Product(props) {
         </div>
         <div className="networkong-computer w-full box-border flex flex-col justify-center gap-y-1.5">
           <div
+            id="networking"
             className="networking w-full h-full relative "
             ref={networkingAndComputer}
             style={{

@@ -150,10 +150,7 @@ ul {
 .navbar.scrolled {
   background-color: #1f252c !important;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 .product-list .slick-slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;

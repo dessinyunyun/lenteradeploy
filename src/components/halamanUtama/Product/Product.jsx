@@ -68,7 +68,7 @@ export default function Product(props) {
             height: props.sizeScreen === "hp" ? `208px` : `${audioVisualHeight + 1}px`,
           }}
         >
-          <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683959734516.jpeg?size=Original" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
+          <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683625549145.jpeg?size=Thumbnail" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
           <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`} id="audio-visual">
             <div className="text text-white absolute bottom-3 left-3 text-start text-base lg:text-xl">
               <h4>Audio Visual</h4>
@@ -84,7 +84,7 @@ export default function Product(props) {
               height: props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? `${networkingAndComputerHeight}px` : `208px`,
             }}
           >
-            <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/6372f7e07746ccd481b5082d_nasa-min-e1683959705302.jpg?size=Original" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
+            <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/6372f7e07746ccd481b5082d_nasa-min.jpg?size=Thumbnail" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
             <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`}>
               <div className="text text-white absolute bottom-3 left-3 text-start text-base sm:text-xs lg:text-base">
                 <h4>Networking</h4>
@@ -99,7 +99,7 @@ export default function Product(props) {
               height: props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? `${networkingAndComputerHeight}px` : `208px`,
             }}
           >
-            <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/printer-computer-office-table_93675-3798-e1683959717790.jpg?size=Original" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
+            <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/printer-computer-office-table_93675-3798.jpg?size=Thumbnail" className="w-full h-full object-cover" layout="fill" alt="audio visual" />
             <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`}>
               <div className="text text-white absolute bottom-3 left-3 text-start text-base sm:text-xs lg:text-base">
                 <h4>Computer and Printer</h4>

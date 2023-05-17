@@ -9,42 +9,42 @@ import Slider from "react-slick";
 export default function Carousel(props) {
   const listImg = [
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/server-scaled-e1683957973547.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/server-scaled.jpg?size=Thumbnail",
       name: "Server",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/office-furniture-scaled-e1683957986375.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/office-furniture-scaled.jpg?size=Thumbnail",
       name: "Office Furniture",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/kamera-scaled-e1683958004681.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/kamera-scaled.jpg?size=Thumbnail",
       name: "Camera",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/cctv-scaled-e1683958012242.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/cctv-scaled.jpg?size=Thumbnail",
       name: "CCTV",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/videowall-scaled-e1683957938528.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/videowall-scaled.jpg?size=Thumbnail",
       name: "Videowall",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/computer-and-printer-scaled-e1683957925943.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/computer-and-printer-scaled.jpg?size=Thumbnail",
       name: "Computer & Printer",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ac-scaled-e1683957901332.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ac-scaled.jpg?size=Thumbnail",
       name: "Air Conditioner",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/networking-scaled-e1683957876788.jpg?size=Original",
+      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/networking-scaled.jpg?size=Thumbnail",
       name: "Networking",
     },
   ];
   const renderSlides = () =>
     listImg.map((item, index) => (
-      <div className="relative w-full h-52" key={index}>
-        <div className="image-container">
+      <div className={`relative w-full ${props.sizeScreen == "hp" && "h-52"}`} key={index}>
+        <div className="image-container" style={{ height: props.sizeScreen !== "hp" && `${props.networkingAndComputerHeight}px` }}>
           <Image alt="product" src={item.img} layout="fill" className="w-full h-full object-cover" />
         </div>
         <div className={`gradient-overlay-carousel absolute inset-0`}>

@@ -49,7 +49,7 @@ export default function Home() {
         className="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
         style={{
           backgroundImage: "url('https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bg.jpg')",
-          height: sizeScreen == "hp" ? "500px" : "800px",
+          height: sizeScreen == "hp" ? "700px" : "800px",
         }}
       >
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">

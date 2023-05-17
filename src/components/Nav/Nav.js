@@ -104,7 +104,7 @@ const Nav = () => {
               </ul>
             </div>
           )}
-          <button className="lg:hidden absolute  focus:outline-none text-white text-md font-medium " onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
+          <button className="lg:hidden absolute top-0 right-3 focus:outline-none text-white text-md font-medium " onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
@@ -114,3 +114,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+//testetestest

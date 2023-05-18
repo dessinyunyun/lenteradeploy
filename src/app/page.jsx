@@ -46,9 +46,10 @@ export default function Home() {
   return (
     <Main>
       <div
+        id="home"
         className="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
         style={{
-          backgroundImage: "url('https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bg.jpg?size=Thumbnail')",
+          backgroundImage: "url('https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bg-1.jpg?size=Original')",
           height: sizeScreen == "hp" ? "700px" : "800px",
         }}
       >
@@ -56,7 +57,7 @@ export default function Home() {
           <div className="h-full flex items-center justify-center">
             <div className="text-white flex items-center justify-center flex-col">
               <h2 className="mb-4 text-2xl font-black">ONE STOP IT SOLUTION</h2>
-              <h3 className="mb-6 text-sm lg:w-2/4  w-3/4 text-center font-bold">
+              <h3 className="mb-6 text-sm sm:text-lg lg:w-2/4  sm:w-3/4 px-5 text-center  font-semibold">
                 Lentera Inovasi provides custom IT solutions designed to optimize processes, increase efficiency, and enhance competitiveness. Our experienced team delivers innovative and sustainable solutions that are tailored to your
                 specific needs, future-proofing your IT infrastructure for years to come.
               </h3>

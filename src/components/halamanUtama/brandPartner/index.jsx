@@ -43,7 +43,7 @@ export default function Index(props) {
         <Slider
           className=""
           dots={false}
-          slidesToShow={props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? 10 : 6}
+          slidesToShow={props.sizeScreen === "laptop" || props.sizeScreen === "tablet" ? 10 : 5}
           autoplay
           autoplaySpeed={2000}
           infinite

@@ -48,8 +48,8 @@ const Nav = () => {
   const navList = [
     {
       id: 1,
-      name: "home",
-      link: "#",
+      name: "Home",
+      link: "#home",
     },
     {
       id: 2,
@@ -75,14 +75,14 @@ const Nav = () => {
 
   return (
     <nav className={`lg:px-32 sm:px-10 px-5 py-3 fixed top-0 navbar z-20 font-regular w-full ${scrolled && "scrolled"} ${!isScrolling && scrolled && !menuOpen && "opacity-0"} ${menuOpen ? "bg-white" : ""}`}>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center  ">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/lenteralogo.png" alt="lentera Inovasi Logo" width={80} height={89} />
           </Link>
         </div>
-        <div className="flex justify-end space-x-4 relative w-full ">
-          <ul className={`hidden lg:flex sm:gap-3 text-xl ${menuOpen ? "flex" : "hidden"} list-destkop `}>
+        <div className="flex justify-end   space-x-4 relative w-full ">
+          <ul className={`hidden lg:flex sm:gap-3   text-xl ${menuOpen ? "flex" : "hidden"} list-destkop `}>
             {navList.map((item) => (
               <li key={item.id}>
                 <Link href={item.link}>
@@ -93,9 +93,9 @@ const Nav = () => {
           </ul>
           {menuOpen && (
             <div className={`absolute top-10 w-11/12 sm:w-8/12 -right-10 h-screen transition-opacity duration-500 ${menuAnimation}`}>
-              <ul className="bg-nav-fot h-full py-16 flex flex-col gap-10 w-full box-border px-5 rounded-md">
+              <ul className="bg-nav-fot h-full py-16 flex flex-col gap-10 w-full px-5 rounded-md">
                 {navList.map((item) => (
-                  <li key={item.id} className="border-b pb-2 border-slate-500 w-3/5" onClick={() => setMenuOpen(!menuOpen)}>
+                  <li key={item.id} className="border-b pb-2 border-slate-500 w-3/5  " onClick={() => setMenuOpen(!menuOpen)}>
                     <Link href={item.link}>
                       <span title={item.name}>{item.name}</span>
                     </Link>

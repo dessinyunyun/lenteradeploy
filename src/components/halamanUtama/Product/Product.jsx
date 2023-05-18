@@ -68,7 +68,7 @@ export default function Product(props) {
             height: props.sizeScreen === "hp" ? `208px` : `${audioVisualHeight + 1}px`,
           }}
         >
-          <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-27-at-16.35.07-e1683625549145.jpeg?size=Thumbnail" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
+          <Image src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/Conference_Room_Systems.png?size=Thumbnail" className="w-full h-full object-cover" alt="audio visual" layout="fill" />
           <div className={`${showOverlay && "gradient-overlay"} absolute inset-0`}>
             <div className="text text-white absolute bottom-3 left-3 text-start text-base lg:text-xl">
               <h4>Audio Visual</h4>

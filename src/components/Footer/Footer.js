@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="primary flex flex-col sm:flex-row items-center sm:items-start sm:justify-around mt-5 w-full border-b border-slate-700 pb-6 pt-1">
         <div className="proud-partner flex flex-col items-center w-full sm:w-1/3 content-center text-sm sm:text-lg text-slate-300">
           <h5 className="font-semibold sm:text-center text-center w-full sm:mb-3">Partner of:</h5>
-          <div class="image-contain flex gap-1">
+          <div className="image-contain flex gap-1">
             <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ekatalog1-removebg-preview.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
             <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bela-pengadaan.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
             <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/siplah.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />

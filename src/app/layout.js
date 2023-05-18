@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 "
             target="_blank"
           >
-            <Image src={"https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/whatsapp.png?size=Thumbnail"} width={40} height={40} />
+            <Image src={"https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/whatsapp.png?size=Thumbnail"} width={40} height={40} alt="whatsapp logo" />
           </Link>
         </div>
         <Footer />

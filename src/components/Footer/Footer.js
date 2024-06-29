@@ -11,9 +11,9 @@ export default function Footer() {
         <div className="proud-partner flex flex-col items-center w-full lg:w-1/3 content-center text-sm sm:text-lg text-slate-300">
           <h5 className="font-semibold lg:text-center text-center w-full lg:mb-3">Partner of:</h5>
           <div className="image-contain flex gap-1">
-            <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ekatalog1-removebg-preview.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
-            <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bela-pengadaan.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
-            <Image className="sm:h-14 sm:w-36" src="https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/siplah.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
+            <Image className="sm:h-14 sm:w-36" src="https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/ekatalog1-removebg-preview.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
+            <Image className="sm:h-14 sm:w-36" src="https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/bela-pengadaan.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
+            <Image className="sm:h-14 sm:w-36" src="https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/siplah.png?size=Woocommerce_gallery_thumbnail" alt="logo ekatalog" width={100} height={35} />
           </div>
         </div>
         <div className="Contact-us sm:text-center text-center text-sm sm:text-lg sm:w-1/3 text-slate-300">

@@ -9,35 +9,35 @@ import Slider from "react-slick";
 export default function Carousel(props) {
   const listImg = [
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/server-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/04/server-scaled.jpg?size=Thumbnail",
       name: "Server",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/office-furniture-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/04/office-furniture-scaled.jpg?size=Thumbnail",
       name: "Office Furniture",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/kamera-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/04/kamera-scaled.jpg?size=Thumbnail",
       name: "Camera",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/04/cctv-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/04/cctv-scaled.jpg?size=Thumbnail",
       name: "CCTV",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/videowall-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/videowall-scaled.jpg?size=Thumbnail",
       name: "Videowall",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/computer-and-printer-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/computer-and-printer-scaled.jpg?size=Thumbnail",
       name: "Computer & Printer",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/ac-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/ac-scaled.jpg?size=Thumbnail",
       name: "Air Conditioner",
     },
     {
-      img: "https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/networking-scaled.jpg?size=Thumbnail",
+      img: "https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/networking-scaled.jpg?size=Thumbnail",
       name: "Networking",
     },
   ];

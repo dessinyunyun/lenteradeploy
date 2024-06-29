@@ -49,7 +49,7 @@ export default function Home() {
         id="home"
         className="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
         style={{
-          backgroundImage: "url('https://wp.lenterainovasi.co.id/wp-content/uploads/2023/05/bg-1.jpg?size=Original')",
+          backgroundImage: "url('https://lentera.aissed-projects.my.id/wp-content/uploads/2023/05/bg-1.jpg?size=Original')",
           height: sizeScreen == "hp" ? "700px" : "800px",
         }}
       >
